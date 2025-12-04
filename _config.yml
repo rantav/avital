@@ -3,6 +3,7 @@ description: קליפים קצרים מסיפור החיים של אביטל
 author: רן תבורי
 email: rantav@gmail.com
 lang: he
+encoding: UTF-8
 copyright: " &#xA9; רן תבורי 2025"
 logo: /assets/img/avital.jpg
 # baseurl: "" # the subpath of your site, e.g. /blog

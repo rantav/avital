@@ -4,8 +4,8 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
     xmlns:content="http://purl.org/rss/1.0/modules/content/"
-    xmlns:atom="http://www.w3.org/2005/Atom" 
-    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
     xml:lang="{{ site.lang }}">
     <channel>
         <atom:link href="{{ "/podcast.rss" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
@@ -57,7 +57,7 @@ layout: null
                 <itunes:season>{{ post.season }}</itunes:season>
                 <itunes:episode>{{ post.episode }}</itunes:episode>
                 <itunes:episodeType>{{ post.episode-type }}</itunes:episodeType>
-                <itunes:image href="{{ site.logo | prepend: site.baseurl | prepend: site.url }}" />
+                <itunes:image href="{{ post.photo-url | default: site.logo | prepend: site.baseurl | prepend: site.url }}" />
                 <itunes:explicit>{{ post.explicit }}</itunes:explicit>
                 <itunes:block>{{ post.block }}</itunes:block>
             </item>
