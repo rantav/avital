@@ -40,7 +40,12 @@ layout: null
         </itunes:category>
         <itunes:type>episodic</itunes:type>
         <itunes:explicit>no</itunes:explicit>
-        {% for post in site.posts %}
+        {% if site.post_order == "oldest" %}
+        {% assign posts = site.posts | reverse %}
+        {% else %}
+        {% assign posts = site.posts %}
+        {% endif %}
+        {% for post in posts %}
             <item>
                 <title>{{ post.title | xml_escape }}</title>
                 <itunes:title>{{ post.title | xml_escape }}</itunes:title>

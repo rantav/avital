@@ -1,5 +1,10 @@
 <table>
-  {% for post in site.posts %}
+  {% if site.post_order == "oldest" %}
+  {% assign posts = site.posts | reverse %}
+  {% else %}
+  {% assign posts = site.posts %}
+  {% endif %}
+  {% for post in posts %}
   <tr>
     {% if post.photo-url %}
     <td class="thumbnail-cell">
