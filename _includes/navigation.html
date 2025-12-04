@@ -1,13 +1,13 @@
 <table>
   {% for post in site.posts %}
   <tr>
-<!-- TODO: Add a thumbnail
-    <td>
+    {% if post.photo-url %}
+    <td class="thumbnail-cell">
       <a href="{{ post.url | absolute_url }}">
-        <img src="{{"assets/img/play.png" | relative_url}}" alt="Play" />
+        <img src="{{ post.photo-url | relative_url }}" alt="{{ post.title }}" class="post-thumbnail" />
       </a>
     </td>
--->
+    {% endif %}
     <td>
       <a href="{{ post.url | absolute_url }}">{{ post.title }}</a><br />
       <!-- <small>{{ post.date | date: "%-d %B %Y" }}</small> -->
