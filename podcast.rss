@@ -38,7 +38,7 @@ layout: null
         <itunes:category text="Business">
             <itunes:category text="Entrepreneurship" />
         </itunes:category>
-        <itunes:type>episodic</itunes:type>
+        <itunes:type>serial</itunes:type>
         <itunes:explicit>no</itunes:explicit>
         {% if site.post_order == "oldest" %}
         {% assign posts = site.posts | reverse %}
