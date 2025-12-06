@@ -12,6 +12,9 @@ layout: default
 {% if page.photo-url %}
 <section class="photo-section">
     <img src="{{ page.photo-url | relative_url }}" alt="{{ page.title }}" class="episode-photo" />
+    {% if page.photo-caption %}
+    <p class="photo-caption">{{ page.photo-caption }}</p>
+    {% endif %}
 </section>
 {% endif %}
 
