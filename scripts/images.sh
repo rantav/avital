@@ -65,8 +65,16 @@ resize_images_crop() {
         
         width=$(sips -g pixelWidth "$img" 2>/dev/null | grep pixelWidth | awk '{print $2}')
         height=$(sips -g pixelHeight "$img" 2>/dev/null | grep pixelHeight | awk '{print $2}')
+        size_bytes=$(stat -f%z "$img" 2>/dev/null || stat -c%s "$img" 2>/dev/null)
+        size_kb=$((size_bytes / 1024))
         
         if [ -n "$width" ] && [ -n "$height" ]; then
+            # Skip if already correct size and under max file size
+            if [ "$width" = "$TARGET_SIZE" ] && [ "$height" = "$TARGET_SIZE" ] && [ "$size_kb" -le "$MAX_FILE_SIZE_KB" ]; then
+                echo "  ✓ Already ${TARGET_SIZE}x${TARGET_SIZE} and under ${MAX_FILE_SIZE_KB}KB, skipping"
+                continue
+            fi
+            
             # Determine the smaller dimension for square crop
             if [ "$width" -lt "$height" ]; then
                 crop_size=$width
@@ -121,8 +129,16 @@ resize_images_pad() {
         
         width=$(sips -g pixelWidth "$img" 2>/dev/null | grep pixelWidth | awk '{print $2}')
         height=$(sips -g pixelHeight "$img" 2>/dev/null | grep pixelHeight | awk '{print $2}')
+        size_bytes=$(stat -f%z "$img" 2>/dev/null || stat -c%s "$img" 2>/dev/null)
+        size_kb=$((size_bytes / 1024))
         
         if [ -n "$width" ] && [ -n "$height" ]; then
+            # Skip if already correct size and under max file size
+            if [ "$width" = "$TARGET_SIZE" ] && [ "$height" = "$TARGET_SIZE" ] && [ "$size_kb" -le "$MAX_FILE_SIZE_KB" ]; then
+                echo "  ✓ Already ${TARGET_SIZE}x${TARGET_SIZE} and under ${MAX_FILE_SIZE_KB}KB, skipping"
+                continue
+            fi
+            
             # Determine the larger dimension
             if [ "$width" -gt "$height" ]; then
                 max_dim=$width
