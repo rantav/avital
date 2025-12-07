@@ -44,3 +44,70 @@ img#logo {
 	padding-right:0;
 	padding-left:15px;
 }
+
+/* Podcast Subscribe Buttons */
+.podcast-buttons {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.subscribe-label {
+	font-size: 0.9em;
+	color: #666;
+	margin-bottom: 10px;
+}
+
+.button-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	justify-content: center;
+}
+
+.podcast-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 14px;
+	border-radius: 20px;
+	text-decoration: none;
+	font-size: 0.85em;
+	font-weight: 500;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.podcast-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.podcast-btn svg {
+	flex-shrink: 0;
+}
+
+.podcast-btn.apple {
+	background: linear-gradient(180deg, #9b4dca 0%, #8e44ad 100%);
+	color: white;
+}
+
+.podcast-btn.overcast {
+	background: linear-gradient(180deg, #fc7e0f 0%, #e86b00 100%);
+	color: white;
+}
+
+.podcast-btn.pocketcasts {
+	background: linear-gradient(180deg, #f43e37 0%, #d63031 100%);
+	color: white;
+}
+
+.podcast-btn.rss {
+	background: linear-gradient(180deg, #f39c12 0%, #d68910 100%);
+	color: white;
+}
+
+@media (max-width: 480px) {
+	.podcast-btn {
+		padding: 6px 10px;
+		font-size: 0.75em;
+	}
+}

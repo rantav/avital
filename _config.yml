@@ -6,6 +6,8 @@ lang: he
 encoding: UTF-8
 copyright: " &#xA9; רן תבורי 2025"
 logo: /assets/img/avital.jpg
+# Podcast RSS feed URL (used for subscribe buttons)
+podcast_url: https://avital.tavory.com/podcast.rss
 # Post ordering: "newest" (default, newest first) or "oldest" (oldest first)
 post_order: "oldest"
 # baseurl: "" # the subpath of your site, e.g. /blog
