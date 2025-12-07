@@ -8,6 +8,8 @@ copyright: " &#xA9; רן תבורי 2025"
 logo: /assets/img/avital.jpg
 # Podcast RSS feed URL (used for subscribe buttons)
 podcast_url: https://avital.tavory.com/podcast.rss
+# Spotify show URL (get this after submitting to Spotify for Podcasters)
+spotify_url: https://open.spotify.com/show/YOUR_SHOW_ID
 # Post ordering: "newest" (default, newest first) or "oldest" (oldest first)
 post_order: "oldest"
 # baseurl: "" # the subpath of your site, e.g. /blog
