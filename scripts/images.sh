@@ -3,17 +3,18 @@
 # Podcast image management script
 # iTunes/Apple Podcasts requirements:
 # - Minimum: 1400x1400 pixels
-# - Recommended: 3000x3000 pixels
+# - Maximum: 3000x3000 pixels
 # - Square (1:1 aspect ratio)
 # - JPEG or PNG format
 # - File size: under 512 KB recommended
+# Using 2000x2000 for good balance of quality and file size
 
 set -e
 
 IMAGES_DIR="assets/img"
-TARGET_SIZE=3000
+TARGET_SIZE=2000
 MAX_FILE_SIZE_KB=512
-JPEG_QUALITY=30  # Adjust to get under 512KB at 3000x3000
+JPEG_QUALITY=55  # Higher quality possible at 2000x2000 while staying under 512KB
 
 check_images() {
     echo "Checking podcast image dimensions and file sizes..."
@@ -174,10 +175,12 @@ usage() {
     echo ""
     echo "iTunes/Apple Podcasts requirements:"
     echo "  - Minimum: 1400x1400 pixels"
-    echo "  - Recommended: 3000x3000 pixels"
+    echo "  - Maximum: 3000x3000 pixels"
     echo "  - Square (1:1 aspect ratio)"
     echo "  - JPEG or PNG format"
     echo "  - File size: under 512 KB recommended"
+    echo ""
+    echo "This script uses 2000x2000 for optimal quality/size balance."
 }
 
 # Main
