@@ -1,22 +1,15 @@
-<table>
+<div class="posts-grid">
   {% if site.post_order == "oldest" %}
   {% assign posts = site.posts | reverse %}
   {% else %}
   {% assign posts = site.posts %}
   {% endif %}
   {% for post in posts %}
-  <tr>
+  <a href="{{ post.url | absolute_url }}" class="post-card">
     {% if post.photo-url %}
-    <td class="thumbnail-cell">
-      <a href="{{ post.url | absolute_url }}">
-        <img src="{{ post.photo-url | relative_url }}" alt="{{ post.title }}" class="post-thumbnail" />
-      </a>
-    </td>
+    <img src="{{ post.photo-url | relative_url }}" alt="{{ post.title }}" class="post-thumbnail" />
     {% endif %}
-    <td>
-      <a href="{{ post.url | absolute_url }}">{{ post.title }}</a><br />
-      <!-- <small>{{ post.date | date: "%-d %B %Y" }}</small> -->
-    </td>
-  </tr>
+    <span class="post-title">{{ post.title }}</span>
+  </a>
   {% endfor %}
-</table>
+</div>
