@@ -2,7 +2,7 @@
 title:        נשארתי למטה
 mp3-url:      "/assets/audio/avital15 נשארתי למטה.mp3"
 photo-url:    "/assets/img/avital15.jpg"
-photo-caption: תמונה מג׳ונרטת איי-איי של מטיילים על ההר
+photo-caption: תמונה מג׳ונרטת בינה מלאכותית של מטיילים על ההר
 season:       1
 episode:      15
 episode-type: full

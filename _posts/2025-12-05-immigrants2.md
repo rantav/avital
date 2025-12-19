@@ -2,7 +2,7 @@
 title:        מעפילים 2
 mp3-url:      "/assets/audio/avital09 מעפילים2.mp3"
 photo-url:    "/assets/img/avital09.jpg"
-photo-caption: תמונה מג׳ונרטת איי-איי של חברי יגור עם מקלות מול הבריטים
+photo-caption: תמונה מג׳ונרטת בינה מלאכותית של חברי יגור עם מקלות מול הבריטים
 season:       1
 episode:      9
 episode-type: full

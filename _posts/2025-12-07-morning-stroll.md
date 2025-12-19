@@ -2,7 +2,7 @@
 title:        שיטוט של בוקר
 mp3-url:      "/assets/audio/avital14 שיטוט של בוקר.mp3"
 photo-url:    "/assets/img/avital14.jpg"
-photo-caption: תמונה מג׳ונרטת איי-איי של ילד קטן על ההר
+photo-caption: תמונה מג׳ונרטת בינה מלאכותית של ילד קטן על ההר
 season:       1
 episode:      14
 episode-type: full

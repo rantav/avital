@@ -2,7 +2,7 @@
 title:        "מורה למוזיקה"
 mp3-url:      "/assets/audio/avital07 מורה למוזיקה.mp3"
 photo-url:    "/assets/img/avital07.jpg"
-photo-caption: תמונה מג׳ונרטת איי-איי של מורה למוזיקה עם תלמידים
+photo-caption: תמונה מג׳ונרטת בינה מלאכותית של מורה למוזיקה עם תלמידים
 season:       1
 episode:      7
 episode-type: full

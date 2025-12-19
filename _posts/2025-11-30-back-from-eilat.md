@@ -2,7 +2,7 @@
 title:        "בחזרה מאילת"
 mp3-url:      "/assets/audio/avital04-בחזרה מאילת.mp3"
 photo-url:    "/assets/img/avital04.jpg"
-photo-caption: תמונה מג׳ונרטת איי-איי של אביטל בחזרה מאילת
+photo-caption: תמונה מג׳ונרטת בינה מלאכותית של אביטל בחזרה מאילת
 season:       1
 episode:      4
 episode-type: full # or "trailer"

@@ -2,7 +2,7 @@
 title:        רדיו בריטי
 mp3-url:      "/assets/audio/avital18 רדיו בריטי.mp3"
 photo-url:    "/assets/img/avital18.jpg"
-photo-caption: תמונה מג׳ונרטת איי-איי של איש מקשיב לרדיו במועדון
+photo-caption: תמונה מג׳ונרטת בינה מלאכותית של איש מקשיב לרדיו במועדון
 season:       1
 episode:      18
 episode-type: full

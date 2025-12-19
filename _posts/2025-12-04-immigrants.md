@@ -2,7 +2,7 @@
 title:        מעפילים
 mp3-url:      "/assets/audio/avital08 מעפילים.mp3"
 photo-url:    "/assets/img/avital08.jpg"
-photo-caption: תמונה מג׳ונרטת איי-איי של מעפילים
+photo-caption: תמונה מג׳ונרטת בינה מלאכותית של מעפילים
 season:       1
 episode:      8
 episode-type: full
