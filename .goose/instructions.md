@@ -15,7 +15,9 @@ For every new mp3 file:
 ## Transcription
 Transcription instructions:
 Use a clean verbatim transcription in Hebrew.
-Use Whisper for transcription. If you can't, let me know.
+Use Gemini for transcription like so:
+`uv run python transcribe.py`
+Read the output and use it for the blog post.
 
 Based on the transcription, create a new blog post.
 
@@ -24,6 +26,8 @@ Requirements:
 - Use the same front-matter structure as existing posts
 - Keep it authentic, not over-polished. Use the same tone as the existing posts.
 - Do not invent content not in the recording
+- Title is exactly the same as the file name but without the previx "avitalxx" and the suffix ".mp3". For example: "avital26 הילד שהחליק.mp3" -> "הילד שהחליק".
+- File name is a translation of the title from Hebrew to English and make it very short, e.g. "הילד שהחליק" -> "slipped".
 
 Save the file under _posts with the mp3's file date.
 - Posts must be in Hebrew (RTL)
