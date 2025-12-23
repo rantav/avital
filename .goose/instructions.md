@@ -16,7 +16,8 @@ For every new mp3 file:
 Transcription instructions:
 Use a clean verbatim transcription in Hebrew.
 Use Gemini for transcription like so:
-`uv run python transcribe.py`
+`uv run python transcribe.py <audio_file>`
+where <audio_file> is the path to the mp3 file.
 Read the output and use it for the blog post.
 
 Based on the transcription, create a new blog post.

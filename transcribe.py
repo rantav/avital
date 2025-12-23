@@ -1,17 +1,25 @@
 import os
+import sys
 from google import genai
 from bidi.algorithm import get_display
 
 # MODEL = "models/gemini-3-pro-preview"
 MODEL = "models/gemini-3-flash-preview"
+
+if len(sys.argv) < 2:
+    print(f"Usage: python {sys.argv[0]} <audio_file>")
+    sys.exit(1)
+
+audio_path = sys.argv[1]
+
 # 1. Initialize the client
 # If using AI Studio, provide the API key
 client = genai.Client(api_key=os.environ.get("GOOGLE_API_KEY"))
 
 # 2. Upload the local file
 # The Files API handles MP3, WAV, and other audio formats
-print("Uploading file...")
-audio_file = client.files.upload(file="test.mp3")
+print(f"Uploading file: {audio_path}")
+audio_file = client.files.upload(file=audio_path)
 
 # 3. Transcribe using a 2025 model (like Gemini 2.0 Flash)
 print("Transcribing...")
