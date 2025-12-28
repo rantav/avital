@@ -3,8 +3,8 @@ import sys
 from google import genai
 from bidi.algorithm import get_display
 
-# MODEL = "models/gemini-3-pro-preview"
-MODEL = "models/gemini-3-flash-preview"
+MODEL = "models/gemini-3-pro-preview"
+# MODEL = "models/gemini-3-flash-preview"
 
 if len(sys.argv) < 2:
     print(f"Usage: python {sys.argv[0]} <audio_file>")
@@ -28,7 +28,8 @@ response = client.models.generate_content(
     contents=[
         """Transcribe this audio file exactly as spoken.
 Use a clean verbatim transcription in Hebrew.
-Produce the transcription text only, do not add any other preamble or postamble text to the transcription.""",
+Produce the transcription text only, do not add any other preamble or postamble text to the transcription.
+Transcribe only the speaker, if there is a song, do not transcribe the song.""",
         audio_file,
     ],
 )

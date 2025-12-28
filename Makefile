@@ -21,3 +21,5 @@ resize-images-pad:
 
 goose:
 	goose run -i .goose/instructions.md
+
+add-episodes: goose resize-images serve
