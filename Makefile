@@ -18,3 +18,6 @@ resize-images:
 # Resize podcast images to 3000x3000 with letterbox/padding (adds white borders)
 resize-images-pad:
 	@./scripts/images.sh resize-pad
+
+goose:
+	goose run -i .goose/instructions.md
