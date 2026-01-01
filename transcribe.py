@@ -19,7 +19,9 @@ client = genai.Client(api_key=os.environ.get("GOOGLE_API_KEY"))
 # 2. Upload the local file
 # The Files API handles MP3, WAV, and other audio formats
 print(f"Uploading file: {audio_path}")
-audio_file = client.files.upload(file=audio_path)
+# Handle Hebrew/non-ASCII filenames by opening as binary
+with open(audio_path, 'rb') as f:
+    audio_file = client.files.upload(file=f, config={'mime_type': 'audio/mpeg'})
 
 # 3. Transcribe using a 2025 model (like Gemini 2.0 Flash)
 print("Transcribing...")
