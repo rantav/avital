@@ -40,6 +40,7 @@ Episode number instructions:
 - Each episode has a unique number within a season.
 - The numbers should be sequential and follow the previous episode number.
 - If two episodes are published on the same day, the second episode should have a higher number.
+- If two episodes are published on the same day, order their episode number such that they match the number in the mp3 file, namely the post for avital39.mp3 comes after the post for avital38.mp3
 
 ## Episode photos
 - Each episode has a unique photo.
