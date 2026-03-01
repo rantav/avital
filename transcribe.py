@@ -3,8 +3,8 @@ import sys
 from google import genai
 from bidi.algorithm import get_display
 
-MODEL = "models/gemini-3-pro-preview"
-# MODEL = "models/gemini-3-flash-preview"
+MODEL = "models/gemini-3.1-pro-preview"
+# MODEL = "models/gemini-3.1-flash-preview"
 
 if len(sys.argv) < 2:
     print(f"Usage: python {sys.argv[0]} <audio_file>")
@@ -23,7 +23,7 @@ print(f"Uploading file: {audio_path}")
 with open(audio_path, 'rb') as f:
     audio_file = client.files.upload(file=f, config={'mime_type': 'audio/mpeg'})
 
-# 3. Transcribe using a 2025 model (like Gemini 2.0 Flash)
+# 3. Transcribe using Gemini 3.1 Pro Preview
 print("Transcribing...")
 response = client.models.generate_content(
     model=MODEL,
