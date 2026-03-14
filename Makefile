@@ -21,9 +21,10 @@ resize-images-pad:
 
 goose:
 	goose run -i .goose/instructions.md
-claude: 
+
+claude:
 	claude -p < .goose/instructions.md
 
-add-episodes: goose resize-images serve
+add-episodes: claude resize-images serve
 
 
