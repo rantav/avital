@@ -20,7 +20,7 @@ layout: default
 
 <section>
     <audio class="podcast" preload="auto" controls>
-      <source src="{{ page.mp3-url | replace: '?', '%3F' | prepend: site.baseurl | prepend: site.url }}" type="audio/mp3" />
+      <source src="{{ page.mp3-url | replace: '?', '%3F' | replace: ' ', '%20' | prepend: site.baseurl | prepend: site.url }}" type="audio/mpeg" />
     </audio>
 </section>
 
