@@ -23,7 +23,7 @@ goose:
 	goose run -i .goose/instructions.md
 
 claude:
-	claude -p < .goose/instructions.md
+	cch -p < .goose/instructions.md
 
 add-episodes: claude resize-images serve
 
