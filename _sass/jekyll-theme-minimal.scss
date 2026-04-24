@@ -241,7 +241,8 @@ footer {
     margin:0;
   }
 
-  header, section, footer {
+  header, section, footer,
+  [dir="rtl"] header, [dir="rtl"] section, [dir="rtl"] footer {
     float:none;
     position:static;
     width:auto;
