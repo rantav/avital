@@ -2,7 +2,7 @@
 title:        כרמלה - אפילו לא חיתול
 mp3-url:      "/assets/audio/avital94 כרמלה - אפילו לא חיתול.mp3"
 photo-url:    "/assets/img/avital94.jpg"
-photo-caption: כרמלה
+photo-caption: גיל על הידים של סבתא איטה
 season:       7
 episode:      8
 episode-type: full

@@ -2,7 +2,7 @@
 title:        אילת לא נרדמת
 mp3-url:      "/assets/audio/avital46 אילת לא נרדמת.mp3"
 photo-url:    "/assets/img/avital46.jpg"
-photo-caption: אילת על הידים של סבתא איטה
+photo-caption: אילת עם אביטל ודרורה
 season:       3
 episode:      13
 episode-type: full
