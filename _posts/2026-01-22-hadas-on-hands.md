@@ -1,7 +1,7 @@
 ---
 title:        הדס על הידיים
 mp3-url:      "/assets/audio/avital69 הדס על הידיים.mp3"
-photo-url:    "/assets/img/avital69.JPG"
+photo-url:    "/assets/img/avital69.jpg"
 photo-caption: הדס
 season:       5
 episode:      8
